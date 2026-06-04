@@ -1,0 +1,57 @@
+/* SCSS-ядро для Angular-компонента. Цвета повторяют существующий theme.css. */
+:host {
+  --landing-primary: var(--color-primary, #2563eb);
+  --landing-primary-hover: var(--color-primary-hover, #1d4ed8);
+  --landing-surface: var(--color-surface, #ffffff);
+  --landing-muted: var(--color-text-muted, #64748b);
+  --landing-border: var(--color-primary-border, #dbe5f4);
+  display: block;
+  color: var(--color-text-primary, #122033);
+}
+
+.landing-section {
+  padding: clamp(48px, 8vw, 88px) 0;
+}
+
+.landing-inner {
+  width: min(1180px, calc(100% - 32px));
+  margin: 0 auto;
+}
+
+.landing-grid {
+  display: grid;
+  gap: 24px;
+
+  @media (min-width: 760px) {
+    grid-template-columns: minmax(0, 1fr) minmax(360px, 0.9fr);
+    align-items: center;
+  }
+}
+
+.landing-card {
+  padding: 22px;
+  border: 1px solid var(--landing-border);
+  border-radius: 22px;
+  background: var(--landing-surface);
+  box-shadow: 0 14px 36px rgba(17, 38, 77, 0.08);
+  transition: transform 180ms ease, box-shadow 180ms ease;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 22px 44px rgba(17, 38, 77, 0.12);
+  }
+}
+
+.landing-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 0 20px;
+  border: 0;
+  border-radius: 14px;
+  background: linear-gradient(135deg, var(--landing-primary), var(--landing-primary-hover));
+  color: #fff;
+  font-weight: 800;
+  box-shadow: 0 12px 24px rgba(21, 87, 200, 0.22);
+}

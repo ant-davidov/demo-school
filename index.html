@@ -1,0 +1,478 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Учет имущества — понятная система для организации</title>
+  <meta name="description" content="Система для учета предметов, кабинетов, сотрудников, кодов на наклейках, фотографий и истории перемещений имущества.">
+  <link rel="icon" href="data:,">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Учет имущества">
+      <span class="brand-mark">УИ</span>
+      <span>Учет имущества</span>
+    </a>
+
+    <nav class="desktop-nav" aria-label="Главная навигация">
+      <a href="#features">Возможности</a>
+      <a href="#workflow">Как работает</a>
+      <a href="#audience">Для кого</a>
+      <a href="#reviews">Отзывы</a>
+    </nav>
+
+    <a class="header-cta" href="#demo">Посмотреть систему</a>
+    <button class="menu-button" type="button" aria-label="Открыть меню" aria-expanded="false">
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+
+  <nav class="mobile-nav" aria-label="Мобильная навигация">
+    <a href="#features">Возможности</a>
+    <a href="#workflow">Как работает</a>
+    <a href="#audience">Для кого</a>
+    <a href="#reviews">Отзывы</a>
+    <a class="mobile-nav-cta" href="#demo">Посмотреть систему</a>
+  </nav>
+
+  <main id="top">
+    <section class="hero section-band">
+      <div class="section-inner hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Система для учета имущества</p>
+          <h1>Все предметы, кабинеты и ответственные сотрудники — в одной понятной системе</h1>
+          <p class="hero-text">
+            Система помогает быстро найти имущество, проверить коды на наклейках и фотографии, отследить перемещения и подготовить документы без ручных списков.
+          </p>
+          <div class="hero-actions">
+            <a class="primary-button" href="#demo">Запросить показ</a>
+            <a class="secondary-button" href="#screens">Посмотреть экран</a>
+          </div>
+          <div class="hero-proof" aria-label="Ключевые показатели">
+            <span><strong>3</strong> главных раздела</span>
+            <span><strong>Коды</strong> проверяются</span>
+            <span><strong>Таблица</strong> загружается</span>
+          </div>
+        </div>
+
+        <div class="product-preview reveal" id="screens" aria-label="Пример экрана системы">
+          <div class="app-shell">
+            <aside class="mock-sidebar">
+              <div class="mock-brand"></div>
+              <span class="mock-nav active"></span>
+              <span class="mock-nav"></span>
+              <span class="mock-nav"></span>
+              <span class="mock-nav short"></span>
+            </aside>
+            <section class="mock-page">
+              <div class="mock-topline"></div>
+              <div class="mock-title-row">
+                <div>
+                  <span class="mock-title"></span>
+                  <span class="mock-subtitle"></span>
+                </div>
+                <span class="mock-button"></span>
+              </div>
+              <div class="mock-toolbar">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <div class="mock-table">
+                <div class="mock-table-head"></div>
+                <div class="mock-row"><b></b><span></span><i class="ok"></i><i></i></div>
+                <div class="mock-row"><b></b><span></span><i></i><i class="ok"></i></div>
+                <div class="mock-row"><b></b><span></span><i class="ok"></i><i class="ok"></i></div>
+              </div>
+            </section>
+          </div>
+          <div class="floating-card floating-card-one">
+            <span class="card-icon">Код</span>
+            <div>
+              <strong>12 требуют проверки</strong>
+              <small>План проверок подскажет, что обновить</small>
+            </div>
+          </div>
+          <div class="floating-card floating-card-two">
+            <span class="card-icon photo">Ф</span>
+            <div>
+              <strong>Фото и история</strong>
+              <small>Актуальность видна сразу</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-band problem">
+      <div class="section-inner split-grid">
+        <div class="section-copy reveal">
+          <p class="eyebrow">Проблема</p>
+          <h2>Инвентаризация часто живет в таблицах, памяти сотрудников и разрозненных списках</h2>
+          <p>
+            Когда предметы перемещаются между кабинетами и людьми, становится сложно понять актуальное местоположение, проверить наличие фото, распечатать коды на наклейках и доказать историю изменений.
+          </p>
+        </div>
+        <div class="pain-list reveal">
+          <article><span>01</span><strong>Неясно, где предмет находится сейчас</strong></article>
+          <article><span>02</span><strong>Коды на наклейках и фотографии устаревают без контроля</strong></article>
+          <article><span>03</span><strong>Списки сотрудников, кабинетов и имущества расходятся</strong></article>
+          <article><span>04</span><strong>Историю перемещений приходится собирать вручную</strong></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-band solution">
+      <div class="section-inner">
+        <div class="center-copy reveal">
+          <p class="eyebrow">Решение</p>
+          <h2>Единая рабочая панель для ответственного учета</h2>
+          <p>
+            Система связывает предметы с сотрудниками и кабинетами, показывает состояние кодов на наклейках и фото, хранит историю, поддерживает права доступа и ускоряет массовое добавление данных.
+          </p>
+        </div>
+
+        <div class="value-grid">
+          <article class="value-card reveal">
+            <span class="icon-badge">1</span>
+            <h3>Каталог предметов</h3>
+            <p>Фильтры по названию, инвентарному номеру, сотруднику, кабинету, типу, статусу, коду и фото.</p>
+          </article>
+          <article class="value-card reveal">
+            <span class="icon-badge">2</span>
+            <h3>Связи и история</h3>
+            <p>Карточки сотрудников и кабинетов показывают закрепленные предметы и перемещения.</p>
+          </article>
+          <article class="value-card reveal">
+            <span class="icon-badge">3</span>
+            <h3>Контроль актуальности</h3>
+            <p>План проверок подсказывает, где нужно обновить код на наклейке или фотографию.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-band features" id="features">
+      <div class="section-inner">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Возможности</p>
+          <h2>Функции, которые нужны не для красоты, а для ежедневной работы</h2>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature-card reveal">
+            <h3>Предметы</h3>
+            <p>Создание, редактирование, сортировка, настраиваемые колонки, статусы, типы, стоимость и инвентарные номера.</p>
+          </article>
+          <article class="feature-card reveal">
+            <h3>Сотрудники</h3>
+            <p>Карточки ответственных лиц, список закрепленных предметов, история фамилии, имени и отчества, быстрый переход к имуществу.</p>
+          </article>
+          <article class="feature-card reveal">
+            <h3>Кабинеты</h3>
+            <p>Учет помещений, табличные и компактные списки предметов, выгрузка данных и понятная табличка кабинета.</p>
+          </article>
+          <article class="feature-card reveal">
+            <h3>Коды на наклейках</h3>
+            <p>Печать выбранных кодов, история проверок, контроль устаревших и отсутствующих наклеек.</p>
+          </article>
+          <article class="feature-card reveal">
+            <h3>Фото</h3>
+            <p>Отметки актуальности фотографий помогают быстрее готовиться к проверкам и сверкам.</p>
+          </article>
+          <article class="feature-card reveal">
+            <h3>Права доступа</h3>
+            <p>Управление пользователями и разрешениями по разделам: предметы, кабинеты, сотрудники, справочники.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-band interface-section">
+      <div class="section-inner interface-grid">
+        <div class="interface-copy reveal">
+          <p class="eyebrow">Экраны системы</p>
+          <h2>Знакомый деловой вид, но легче для восприятия</h2>
+          <p>
+            Страница сохраняет стиль приложения: светлый фон, синие кнопки, карточки с мягкой тенью, округлые панели действий и спокойную иерархию текста.
+          </p>
+        </div>
+        <div class="interface-stack reveal">
+          <article>
+            <strong>Список предметов</strong>
+            <span>Фильтры, сортировка, выбор колонок, печать кодов.</span>
+          </article>
+          <article>
+            <strong>Карточка кабинета</strong>
+            <span>Данные помещения, связанные предметы, выгрузка документа.</span>
+          </article>
+          <article>
+            <strong>План проверок</strong>
+            <span>Проверки кодов и фото по периодам.</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-band live-demo" id="app-preview">
+      <div class="section-inner">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Посмотреть приложение</p>
+          <h2>Несколько реальных экранов с вымышленными данными</h2>
+          <p>
+            Такой блок помогает сразу понять, как система выглядит в работе: где искать предмет, как открыть сотрудника, как проверить кабинет и что требует внимания.
+          </p>
+        </div>
+
+        <div class="demo-tabs reveal" role="tablist" aria-label="Примеры экранов приложения">
+          <button class="demo-tab is-active" type="button" data-demo-tab="items">Предметы</button>
+          <button class="demo-tab" type="button" data-demo-tab="person">Сотрудник</button>
+          <button class="demo-tab" type="button" data-demo-tab="cabinet">Кабинет</button>
+          <button class="demo-tab" type="button" data-demo-tab="checks">Проверки</button>
+        </div>
+
+        <div class="demo-frame reveal">
+          <aside class="demo-sidebar" aria-label="Разделы приложения">
+            <div class="demo-sidebar-brand">
+              <span>УИ</span>
+              <strong>Учет имущества</strong>
+            </div>
+            <span class="demo-side-link active">Сотрудники</span>
+            <span class="demo-side-link">Кабинеты</span>
+            <span class="demo-side-link">Предметы</span>
+            <span class="demo-side-link">Проверки</span>
+            <span class="demo-side-link">Справочники</span>
+          </aside>
+
+          <section class="demo-screen is-active" data-demo-panel="items">
+            <div class="demo-screen-head">
+              <div>
+                <span class="demo-path">Главная / Предметы</span>
+                <h3>Управление предметами</h3>
+                <p>Единый список имущества с фильтрами, сортировкой и печатью кодов.</p>
+              </div>
+              <button type="button">Добавить предмет</button>
+            </div>
+            <div class="demo-toolbar">
+              <span>Фильтры</span>
+              <span>Сортировка: название</span>
+              <span>Показано: 4 предмета</span>
+            </div>
+            <div class="demo-table">
+              <div class="demo-table-row demo-table-head">
+                <span>Название</span><span>Номер</span><span>Кабинет</span><span>Ответственный</span><span>Состояние</span>
+              </div>
+              <div class="demo-table-row">
+                <span>Ноутбук учителя</span><span>000124</span><span>204</span><span>Иванова Н. П.</span><span class="state-good">В порядке</span>
+              </div>
+              <div class="demo-table-row">
+                <span>Проектор</span><span>000218</span><span>Актовый зал</span><span>Петров С. А.</span><span class="state-warn">Нужно фото</span>
+              </div>
+              <div class="demo-table-row">
+                <span>Принтер</span><span>000331</span><span>Приемная</span><span>Соколова М. И.</span><span class="state-good">В порядке</span>
+              </div>
+              <div class="demo-table-row">
+                <span>Стол письменный</span><span>000452</span><span>118</span><span>Кабинет</span><span class="state-warn">Проверить код</span>
+              </div>
+            </div>
+          </section>
+
+          <section class="demo-screen" data-demo-panel="person">
+            <div class="demo-screen-head">
+              <div>
+                <span class="demo-path">Главная / Сотрудники / Карточка</span>
+                <h3>Иванова Наталья Петровна</h3>
+                <p>Ответственный сотрудник, закрепленные предметы и история изменений.</p>
+              </div>
+              <button type="button">Сохранить</button>
+            </div>
+            <div class="demo-card-grid">
+              <article>
+                <span>Описание</span>
+                <strong>Кабинет начальных классов</strong>
+                <p>За сотрудником закреплено 6 предметов.</p>
+              </article>
+              <article>
+                <span>История</span>
+                <strong>2 изменения</strong>
+                <p>Смена кабинета и обновление ответственного.</p>
+              </article>
+            </div>
+            <div class="demo-list">
+              <button type="button"><strong>Ноутбук учителя</strong><span>000124 · код и фото в порядке</span></button>
+              <button type="button"><strong>Колонки</strong><span>000125 · требуется обновить фото</span></button>
+              <button type="button"><strong>Документ-камера</strong><span>000126 · проверка через 5 дней</span></button>
+            </div>
+          </section>
+
+          <section class="demo-screen" data-demo-panel="cabinet">
+            <div class="demo-screen-head">
+              <div>
+                <span class="demo-path">Главная / Кабинеты / Карточка</span>
+                <h3>Кабинет 204</h3>
+                <p>Данные помещения и список связанных предметов.</p>
+              </div>
+              <button type="button">Выгрузить документ</button>
+            </div>
+            <div class="door-plate">
+              <span>204</span>
+              <strong>Кабинет начальных классов</strong>
+            </div>
+            <div class="demo-table compact">
+              <div class="demo-table-row demo-table-head">
+                <span>Предмет</span><span>Номер</span><span>Состояние</span>
+              </div>
+              <div class="demo-table-row"><span>Ноутбук учителя</span><span>000124</span><span class="state-good">В порядке</span></div>
+              <div class="demo-table-row"><span>Шкаф учебный</span><span>000129</span><span class="state-good">В порядке</span></div>
+              <div class="demo-table-row"><span>Колонки</span><span>000125</span><span class="state-warn">Нужно фото</span></div>
+            </div>
+          </section>
+
+          <section class="demo-screen" data-demo-panel="checks">
+            <div class="demo-screen-head">
+              <div>
+                <span class="demo-path">Главная / Проверки</span>
+                <h3>План проверок</h3>
+                <p>Система показывает, какие коды и фотографии нужно обновить.</p>
+              </div>
+              <button type="button">Показать все</button>
+            </div>
+            <div class="timeline-list">
+              <article>
+                <span>Сегодня</span>
+                <strong>Проверить код на проекторе</strong>
+                <p>Актовый зал · ответственный Петров С. А.</p>
+              </article>
+              <article>
+                <span>Через 3 дня</span>
+                <strong>Обновить фото колонок</strong>
+                <p>Кабинет 204 · ответственный Иванова Н. П.</p>
+              </article>
+              <article>
+                <span>Через неделю</span>
+                <strong>Проверить стол письменный</strong>
+                <p>Кабинет 118 · требуется сверка наклейки.</p>
+              </article>
+            </div>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-band workflow" id="workflow">
+      <div class="section-inner">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Как это работает</p>
+          <h2>От первичного списка до контролируемого учета</h2>
+        </div>
+        <div class="step-grid">
+          <article class="step-card reveal"><span>1</span><h3>Загрузите список</h3><p>Добавьте предметы вручную или массово через готовую таблицу.</p></article>
+          <article class="step-card reveal"><span>2</span><h3>Свяжите данные</h3><p>Назначьте сотрудника, кабинет, типы и статусы для каждого предмета.</p></article>
+          <article class="step-card reveal"><span>3</span><h3>Наклейте коды</h3><p>Распечатайте коды для выбранных позиций и обновите фотографии.</p></article>
+          <article class="step-card reveal"><span>4</span><h3>Контролируйте</h3><p>Используйте фильтры, историю и план проверок, чтобы данные не устаревали.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-band audience" id="audience">
+      <div class="section-inner audience-grid">
+        <div class="section-copy reveal">
+          <p class="eyebrow">Для кого</p>
+          <h2>Командам, которым нужен простой и проверяемый учет имущества</h2>
+          <p>
+            Интерфейс рассчитан на регулярную работу: крупные кнопки, понятные списки, минимум визуального шума и удобство для проверок на месте.
+          </p>
+        </div>
+        <div class="audience-list reveal">
+          <span>Государственные и муниципальные учреждения</span>
+          <span>Школы, колледжи, вузы и учебные центры</span>
+          <span>Офисные и складские команды</span>
+          <span>Отделы техники и административные службы</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-band reviews" id="reviews">
+      <div class="section-inner">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Отзывы</p>
+          <h2>Как это звучит со стороны пользователей</h2>
+        </div>
+        <div class="review-grid">
+          <article class="review-card reveal">
+            <p>“Раньше мы выясняли принадлежность техники через несколько таблиц. Теперь открываем карточку сотрудника и сразу видим все закрепленные позиции.”</p>
+            <strong>Елена Морозова</strong>
+            <span>Администратор учебного корпуса</span>
+          </article>
+          <article class="review-card reveal">
+            <p>“Отметки по кодам сильно упростили сверку. Видно, что требует проверки, и можно подготовить печать наклеек за пару минут.”</p>
+            <strong>Андрей Лисин</strong>
+            <span>Специалист по инвентаризации</span>
+          </article>
+          <article class="review-card reveal">
+            <p>“Система достаточно простая для сотрудников старшего возраста: крупные действия, понятные фильтры, без лишних экранов.”</p>
+            <strong>Мария Соколова</strong>
+            <span>Руководитель административной службы</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-band landing-concepts">
+      <div class="section-inner">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Варианты подачи</p>
+          <h2>Три понятных варианта структуры страницы</h2>
+        </div>
+        <div class="concept-grid">
+          <article class="concept-card reveal">
+            <h3>Коротко и просто</h3>
+            <p>Первый экран, проблема, три ключевые функции, сценарии работы и кнопка обращения. Тон простой и дружелюбный.</p>
+          </article>
+          <article class="concept-card reveal">
+            <h3>Деловой подход</h3>
+            <p>Первый экран, контроль, безопасность, права доступа, история, отчеты и кнопка обращения. Тон деловой и уверенный.</p>
+          </article>
+          <article class="concept-card reveal">
+            <h3>Современная система</h3>
+            <p>Первый экран с примером интерфейса, проблемы, порядок работы, возможности, отзывы и кнопка обращения. Тон ясный и спокойный.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-band cta-section" id="demo">
+      <div class="section-inner cta-panel reveal">
+        <div>
+          <p class="eyebrow">Готово к внедрению</p>
+          <h2>Покажите команде учет, в котором легко разобраться</h2>
+          <p>Запросите показ системы, чтобы пройти путь от загрузки таблицы до проверки кодов на реальном сценарии вашей организации.</p>
+        </div>
+        <a class="primary-button" href="uchetomis@gmail.com?subject=Показ системы учета имущества">Запросить показ</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <a class="brand" href="#top" aria-label="Учет имущества">
+        <span class="brand-mark">УИ</span>
+        <span>Учет имущества</span>
+      </a>
+      <p>Учет имущества, коды на наклейках, сотрудники, кабинеты и история перемещений.</p>
+      <div class="footer-links">
+        <a href="#features">Возможности</a>
+        <a href="#workflow">Процесс</a>
+        <a href="#demo">Показ</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
